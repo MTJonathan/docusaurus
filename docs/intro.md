@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Introducción
 
 El **Inspector de Elementos** es una herramienta poderosa incluida en la mayoría de los navegadores modernos, como **Google Chrome**, **Mozilla Firefox** y **Microsoft Edge**. Permite visualizar, editar y depurar el código de una página web directamente desde el navegador.
