@@ -4,42 +4,42 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '¿Qué es Inspector de Elementos?',
+    imageUrl: 'https://tse3.mm.bing.net/th?id=OIP.rXkFGjizu6oJrMu7KIJ7mwHaFf&pid=Api',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Es una herramienta integrada en el navegador que te permite inspeccionar y editar el HTML, CSS y JavaScript de cualquier página web en tiempo real.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '¿Para qué sirve?',
+    imageUrl: 'https://tse1.mm.bing.net/th?id=OIP.ulfY51-UTwc4miGgDvm4sgHaEc&pid=Api',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Te ayuda a depurar errores, probar estilos al vuelo y entender la estructura del DOM sin modificar los archivos originales.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Consejos de uso',
+    imageUrl: 'https://tse4.mm.bing.net/th?id=OIP._xSZmQOhTgjSBRMES9X1dgHaEX&pid=Api',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Practica abriendo el inspector en distintas páginas, usa atajos de teclado y experimenta con breakpoints para depurar JavaScript eficientemente.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+
+
+
+function Feature({imageUrl, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={imageUrl} alt={title} style={{ maxWidth: '100%', height: '200px' }} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
