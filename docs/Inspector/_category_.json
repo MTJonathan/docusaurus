@@ -1,0 +1,8 @@
+{
+  "label": "Inspector",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "El Inspector de Elementos es una herramienta integrada en los navegadores web que permite examinar, editar y depurar el contenido de una página en tiempo real. Proporciona acceso directo al código HTML, los estilos CSS, la consola de JavaScript y otras herramientas esenciales para el análisis y desarrollo web."
+  }
+}
