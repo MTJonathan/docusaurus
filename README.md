@@ -29,3 +29,22 @@ Primero, clona el repositorio en tu máquina local:
 ```bash
 git clone https://github.com/tu-usuario/inspector-de-elementos.git
 cd inspector-de-elementos
+```
+
+### Instalación de dependencias
+
+Una vez que hayas clonado el repositorio, instala las dependencias del proyecto:
+
+```bash
+npm install
+```
+
+### Ejecutar el servidor de desarrollo
+
+Para iniciar el servidor de desarrollo y ver el sitio en tu navegador local, usa:
+
+```bash
+npm run start
+```
+
+Abre tu navegador y ve a [localhost:3000](http://localhost:3000) para ver el sitio en funcionamiento.
