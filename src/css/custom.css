@@ -1,30 +1,114 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Este archivo se utiliza para sobrescribir las variables de Infima
+ * y personalizar los estilos globales de Docusaurus, incluyendo la tipografía.
  */
 
-/* You can override the default Infima variables here. */
+/* Tipografía global */
 :root {
-  --ifm-color-primary: #2e8555;
+  --ifm-font-family: 'Inter', sans-serif; /* Cambiar la tipografía a Inter */
+  --ifm-color-primary: #2e8555; /* Color principal */
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
+
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1); /* Fondo para código resaltado */
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Modificaciones para el Modo Oscuro */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary: #25c2a0; /* Color principal para modo oscuro */
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3); /* Fondo más oscuro para código resaltado */
+}
+
+/* Estilo del encabezado (Navbar) */
+.navbar {
+  background-color: var(--ifm-color-primary); /* Utiliza el color principal */
+  color: white;
+  font-family: var(--ifm-font-family); /* Aplicar tipografía personalizada */
+}
+
+.navbar__link {
+  color: white;
+}
+
+.navbar__link:hover {
+  color: var(--ifm-color-primary-darkest);
+}
+
+/* Estilo para la sección Hero */
+.hero--primary {
+  background-color: var(--ifm-color-primary-darkest);
+  color: white;
+  font-family: var(--ifm-font-family); /* Aplicar tipografía personalizada */
+}
+
+.hero__title {
+  font-size: 3rem;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+}
+
+/* Estilos de los botones */
+button, .button {
+  background-color: var(--ifm-color-primary-light);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: var(--ifm-font-family); /* Aplicar tipografía personalizada */
+}
+
+button:hover, .button:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+/* Modificar el fondo de la página */
+body {
+  background-color: #fafafa; /* Fondo claro */
+  color: #333;
+  font-family: var(--ifm-font-family); /* Aplicar tipografía personalizada */
+}
+
+[data-theme='dark'] body {
+  background-color: #121212; /* Fondo oscuro */
+  color: #f5f5f5;
+}
+
+/* Ajustes para los enlaces */
+a {
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-font-family); /* Aplicar tipografía personalizada */
+}
+
+a:hover {
+  color: var(--ifm-color-primary-dark);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--ifm-color-primary-darkest);
+  color: white;
+  padding: 30px 0;
+  font-family: var(--ifm-font-family); /* Aplicar tipografía personalizada */
+}
+
+.footer a {
+  color: var(--ifm-color-primary-light);
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }

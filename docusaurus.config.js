@@ -36,7 +36,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
@@ -50,7 +50,7 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: './src/css/custom.css',  // Añadir tu archivo CSS personalizado
         },
       }),
     ],
@@ -71,7 +71,7 @@ const config = {
           position: 'left',
           label: 'Documentación',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -112,10 +112,6 @@ const config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',
             },
@@ -129,8 +125,10 @@ const config = {
       darkTheme: prismThemes.dracula,
     },
   },
+
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap',  // Cargar la fuente Inter
+  ],
 };
 
 module.exports = config;
-
-
