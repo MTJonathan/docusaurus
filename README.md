@@ -1,41 +1,31 @@
-# Website
+# Inspector de Elementos
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Bienvenido al proyecto **Inspector de Elementos**, una herramienta que te ayudará a entender mejor cómo funciona el DOM en tu navegador y cómo puedes inspeccionar elementos web para mejorar tu desarrollo.
 
-### Installation
+## Descripción
 
-```
-$ yarn
-```
+Este proyecto está basado en Docusaurus, una herramienta para crear sitios web de documentación. Aquí podrás encontrar documentación detallada sobre el uso del Inspector de Elementos, una guía paso a paso para aprovechar al máximo las herramientas de desarrollo del navegador.
 
-### Local Development
+## Características
 
-```
-$ yarn start
-```
+- **Documentación completa**: Una guía detallada sobre cómo abrir el Inspector de Elementos y cómo usar cada una de sus pestañas.
+- **Inspector de Elementos**: Aprende a inspeccionar el código HTML, CSS, JavaScript y a depurar tu página web usando las herramientas del navegador.
+- **Inspector-Extras**: Características adicionales y consejos para mejorar tu experiencia de desarrollo.
+- **Diseño limpio y moderno**: Interfaz fácil de usar, diseñada para mejorar la experiencia de los desarrolladores.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## Instalación
 
-### Build
+### Requisitos previos
 
-```
-$ yarn build
-```
+Para ejecutar este proyecto en tu máquina local, necesitarás tener instalados los siguientes programas:
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+- [Node.js](https://nodejs.org/) (v16 o superior)
+- [npm](https://www.npmjs.com/) (v7 o superior)
 
-### Deployment
+### Clonar el repositorio
 
-Using SSH:
+Primero, clona el repositorio en tu máquina local:
 
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+```bash
+git clone https://github.com/tu-usuario/inspector-de-elementos.git
+cd inspector-de-elementos

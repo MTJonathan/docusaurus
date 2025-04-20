@@ -10,13 +10,13 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Inspector de Elementos',
+  tagline: 'Una herramienta útil para desarrolladores web',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com', // Cambia esto por la URL de tu sitio
-  baseUrl: '/', // Asegúrate de que la ruta base sea correcta
+  // Set the production URL of your site here
+  url: 'https://964677899.facturalo.co', // Cambia esto por la URL de tu sitio
+  baseUrl: '/docusaurus/', // Asegúrate de que la ruta base sea correcta
 
   // GitHub pages deployment config.
   organizationName: 'facebook', // Usualmente tu nombre de usuario o organización en GitHub
@@ -26,8 +26,8 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'es',
+    locales: ['es'],
   },
 
   presets: [
@@ -61,7 +61,7 @@ const config = {
     navbar: {
       title: 'Inspector de Elementos',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Inspector Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -71,7 +71,6 @@ const config = {
           position: 'left',
           label: 'Documentación',
         },
-        // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
